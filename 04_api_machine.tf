@@ -30,6 +30,6 @@ resource "google_compute_instance" "api" {
 		]
 	}
 	provisioner "remote-exec" {
-		scripts = "scripts/apiInstall"
+		script = "${var.scripts-api}"
 	}
 }

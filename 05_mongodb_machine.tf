@@ -30,6 +30,6 @@ resource "google_compute_instance" "mongodb" {
 		]
 	}
 	provisioner "remote-exec" {
-		scripts = "scripts/mongoInstall"
+		script = "${var.scripts-mongodb}"
 	}
 }

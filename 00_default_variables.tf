@@ -7,7 +7,7 @@ variable "name" {
 }
 
 variable "machine_type" {
-	default = "f1-micro"
+	default = "n1-standard-1"
 }
 
 variable "zone" {
@@ -58,21 +58,15 @@ variable "install_packages" {
 }
 
 variable "scripts-angular" {
-	default = [
-			
-	]
+	default = "scripts/angularInstall"	
 }
 
 variable "scripts-api" {
-        default = [
-
-        ]
+        default = "scripts/apiInstall"	
 }
 
 variable "scripts-mongodb" {
-        default = [
-
-        ]
+        default = "scripts/mongoInstall"	
 }
 
 variable "allowed_ports" {
