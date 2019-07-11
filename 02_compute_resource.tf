@@ -30,6 +30,6 @@ resource "google_compute_instance" "default" {
 		]
 	}
 	provisioner "remote-exec" {
-		scripts = "${var.scripts}"
+		scripts = "${var.scripts-angular}"
 	}
 }

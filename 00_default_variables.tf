@@ -59,10 +59,29 @@ variable "install_packages" {
 	}
 }
 
-variable "scripts" {
-	default = []
+variable "scripts-angular" {
+	default = [
+		
+	]
+}
+
+variable "scripts-api" {
+        default = [
+
+        ]
+}
+
+variable "scripts-mongodb" {
+        default = [
+
+        ]
 }
 
 variable "allowed_ports" {
-	default = ["22"]
+	default = [
+		"22",
+		"8080",
+		"27017",
+		"4200"
+	]
 }

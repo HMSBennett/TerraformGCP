@@ -6,16 +6,22 @@ TERRAFORM_DESTROY = "terraform destroy -auto-approve -var-file="
 terraform-init:
 	@terraform init
 
-jenkins-apply:
-	@"${TERRAFORM_APPLY}${VAR_DIR}"/jenkins.tfvars
+angular-apply:
+	@"${TERRAFORM_APPLY}${VAR_DIR}"/angular.tfvars
 
-jenkins-destroy:
-	@"${TERRAFORM_DESTROY}${VAR_DIR}"/jenkins.tfvars
+angular-destroy:
+	@"${TERRAFORM_DESTROY}${VAR_DIR}"/angular.tfvars
 
-python-systemd-http-server-apply:
-	@"${TERRAFORM_APPLY}${VAR_DIR}"/python-systemd-http-server.tfvars
+mongodb-apply:
+	@"${TERRAFORM_APPLY}${VAR_DIR}"/mongodb.tfvars
 
-python-systemd-http-server-destroy:
-	@"${TERRAFORM_APPLY}${VAR_DIR}"/python-systemd-http-server.tfvars
+mongodb-destroy:
+	@"${TERRAFORM_DESTROY}${VAR_DIR}"/mongodb.tfvars
 
-.PHONY = terraform-init jenkins-apply jenkins-destroy python-systemd-http-server-apply python-systemd-http-server-destroy
+api-apply:
+	@"${TERRAFORM_APPLY}${VAR_DIR}"/api.tfvars
+
+api-destroy:
+	@"${TERRAFORM_DESTROY}${VAR_DIR}"/api.tfvars
+
+.PHONY = terraform-init angular-apply angular-destroy mongodb-apply mongodb-destroy api-apply api-destroy
