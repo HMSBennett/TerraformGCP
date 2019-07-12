@@ -2,7 +2,7 @@ echo "Well, howdy ma'am we the two banditos"
 
 git clone https://github.com/HMSBennett/MEANStack
 
-cd MEANStack
+cd MEANStack/
 
 ./backEndMeanInstall.sh
 
