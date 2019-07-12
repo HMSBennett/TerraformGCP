@@ -1,0 +1,7 @@
+echo "I've tried to drown you out, drink til I dont hear the sounds"
+
+git clone https://github.com/HMSBennett/MEANStack
+
+cd MEANStack
+
+./frontEndMeanInstall.sh
