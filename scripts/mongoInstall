@@ -1,5 +1,3 @@
-echo "Hello... is it me you're looking for?"
-
 git clone https://github.com/HMSBennett/MEANStack
 
 cd MEANStack/
