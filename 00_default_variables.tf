@@ -66,7 +66,7 @@ variable "scripts-api" {
 }
 
 variable "scripts-mongodb" {
-        default = "scripts/mongoInstall"	
+        default = "scripts/mongodbInstall"	
 }
 
 variable "allowed_ports" {

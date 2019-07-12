@@ -2,4 +2,4 @@ git clone https://github.com/HMSBennett/MEANStack
 
 cd MEANStack/
 
-./mongoInstall.sh
+./mongodbInstall.sh
